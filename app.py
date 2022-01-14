@@ -28,14 +28,14 @@ from flask import Flask, render_template, request
 
 # VOR Data Read
 import pandas as pd 
-df_VOR = pd.read_csv('VOR Train Test.csv')
+df_VOR = pd.read_excel('VOR Train Test.xlsx')
 df_VOR = df_VOR.drop('ORDER',axis=1)
 
 Features_VOR = df_VOR.iloc [:,0:-1].values      # Feature Matrix / Independent Variables
 Targets_VOR, Values_VOR = pd.factorize(df_VOR["FAULTY PARTS"])      # Target Matrix / Dependent Variable
 
 # MMC Data Read
-df_MMC = pd.read_csv('Multimode Train Test.csv')
+df_MMC = pd.read_excel('Multimode Train Test.xlsx')
 df_MMC = df_MMC.drop('ORDER',axis=1)
 
 Features_MMC = df_MMC.iloc [:,0:-2].values      # Feature Matrix / Independent Variables
