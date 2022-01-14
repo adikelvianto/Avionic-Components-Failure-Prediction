@@ -1,0 +1,21 @@
+
+.container {
+  margin-top: 20%;
+  margin-left:10%;
+  font-family: Calibri;
+ }
+
+.select {
+   -webkit-appearance: menulist-button;
+   height: 40px;
+   width: 250px;
+   border-radius:5px;
+   cursor: pointer;
+   }
+   
+ .title {
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+optgroup { font-size: 18px; }

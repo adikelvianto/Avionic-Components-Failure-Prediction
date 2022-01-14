@@ -1,0 +1,185 @@
+/* For Tablets */
+@media all and (max-width: 1000px) {
+table.mid{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin-top: 80%;
+  margin-bottom: 20%;
+}
+
+table,td {
+  color: black;
+  font-size: 15px;
+  font-family: Calibri;
+}
+
+table{
+  margin-top: 27px;
+  border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th{
+  background-color: #D0CECE;
+  border: 1px solid black;
+  text-align: center;
+  height: 20px;
+  color: black;
+  font-size: 16px;
+  font-family: Calibri;
+}
+
+body{
+  text-align: center;
+}
+
+input.again{
+  margin-top: 20px;
+  font-size: 11px;
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+  color: black;
+  background-color:#F2F2F2;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1.5px #999;
+}
+
+input.another{
+  width: 170px;
+  font-size: 11px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1.5px #999;
+}
+
+input.another:hover {
+  background-color: black;
+  color: white;
+ }
+input.again:hover {
+  background-color: black;
+  color: white;
+ }
+
+input.another:active {
+  background-color: black;
+  color: white;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
+input.again:active {
+  background-color: black;
+  color: white;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+}
+
+/* For Smartphones */
+@media all and (max-width: 670px) {
+table.mid{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+table,td {
+  color: black;
+  font-size: 9px;
+  font-family: Calibri;
+}
+
+table{
+  width: 100%;
+  margin-top: 15px;
+  border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th{
+  background-color: #D0CECE;
+  border: 1px solid black;
+  text-align: center;
+  height: 10px;
+  color: black;
+  font-size: 10px;
+  font-family: Calibri;
+}
+
+body{
+  text-align: center;
+}
+
+input.again{
+  margin-top: 20px;
+  font-size: 8px;
+  width: 130px;
+  height: 25px;
+  border-radius: 4px;
+  color: black;
+  background-color:#F2F2F2;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1.5px #999;
+}
+
+input.another{
+  width: 120px;
+  font-size: 8px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1.5px #999;
+}
+
+
+input.another:hover {
+  background-color: black;
+  color: white;
+ }
+input.again:hover {
+  background-color: black;
+  color: white;
+ }
+
+input.another:active {
+  background-color: black;
+  color: white;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
+input.again:active {
+  background-color: black;
+  color: white;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+}

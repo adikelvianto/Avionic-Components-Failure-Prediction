@@ -1,0 +1,304 @@
+/* For Tablets */
+@media all and (max-width: 1000px) {
+table,td {
+  color: black;
+  font-size: 20px;
+  font-family: Calibri;
+}
+
+.left{
+  padding-left: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  table-layout: fixed;
+  width: 60%;  
+}
+
+table{
+  margin-top: 30px;
+  border: 1px solid black;
+}
+td {
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+  background-color: #D0CECE;
+  border: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  height: 25px;
+  color: black;
+  font-size: 18px;
+  font-family: Calibri;
+}
+.btnctr{
+  text-align: center;
+  table-layout: fixed;
+  padding-bottom: 10px;
+  padding-top: 17px;
+  width: 20%;
+}
+div.title{
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    font-family: Calibri;
+}
+
+.container {
+  height: 50px;
+  position: relative;
+  border: 0px black;
+  margin-top: 10px;
+  }
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+input.predict{
+  width: 180px;
+  height: 40px;
+  border-radius: 6px;
+  background-color:#F2F2F2;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1.5px #999;
+}
+
+input.predict:hover {
+  background-color: black;
+  color: white;
+}
+
+input.predict:active {
+  background-color: black;
+  color: white;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
+input.back{
+  width: 180px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: white;
+   text-align: center;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1.5px #999;
+}
+input.back:hover {
+  background-color: black;
+  color: white;
+}
+
+input.back:active {
+  background-color: black;
+  color: white;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+  
+}
+
+/* For Smartphones */
+@media all and (max-width: 670px) {
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 20px;
+  padding-right: 1px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2ab934;
+  -webkit-transition: .4s;
+  transition: .4s;
+   border-radius: 16px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 1.5px;
+  bottom: 3.5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #ca2222;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(28.8px);
+}
+
+.slider:after
+{
+ content:'PASS';
+ color: white;
+ display: block;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ top: 50%;
+ left: 50%;
+ font-size: 7px;
+ font-family: Calibri, sans-serif;
+}
+
+input:checked + .slider:after
+{  
+  content:'FAIL';
+   top: 50%;
+   left: 50%;
+}
+
+
+table.mid{
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+table,td {
+  color: black;
+  font-size: 12px;
+  font-family: Calibri;
+}
+
+.left{
+  padding-left: 40px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  table-layout: fixed;
+  width: 60%;  
+}
+
+table{
+  margin-top: 20px;
+  border: 1px solid black;
+}
+td {
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+  background-color: #D0CECE;
+  border: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  height: 20px;
+  color: black;
+  font-size: 12px;
+  font-family: Calibri;
+}
+.btnctr{
+  text-align: center;
+  table-layout: fixed;
+  padding-bottom: 10px;
+  padding-top: 17px;
+  width: 20%;
+}
+div.title{
+    text-align: center;
+    color: black;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-family: Calibri;
+}
+
+.container {
+  height: 30px;
+  position: relative;
+  border: 0px black;
+  margin-top: 10px;
+  }
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+input.predict{
+  width: 120px;
+  height: 30px;
+  font-size:11px;
+  border-radius: 5px;
+  background-color:#F2F2F2;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1.5px #999;
+}
+
+input.predict:hover {
+  background-color: black;
+  color: white;
+}
+
+input.predict:active {
+  background-color: black;
+  color: white;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
+input.back{
+  width: 120px;
+  height: 30px;
+  font-size:11px;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1.5px #999;
+}
+input.back:hover {
+  background-color: black;
+  color: white;
+}
+
+input.back:active {
+  background-color: black;
+  color: white;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+}
