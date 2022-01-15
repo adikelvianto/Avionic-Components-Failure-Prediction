@@ -119,8 +119,8 @@ def modelnb_MMC(to_predict_list_MMC):
 def MMCresult():
     if request.method == 'POST':
         to_predict_list_MMC = (request.form.getlist('testresult_MMC', type=int))
-        resultknn_MMC = modelknn_MMC(to_predict_list_MMC)
-        resultrf_MMC = modelrf_MMC(to_predict_list_MMC)
+        resultsvc_MMC = modelsvc_MMC(to_predict_list_MMC)
+        resultlr_MMC = modellr_MMC(to_predict_list_MMC)
         resultnb_MMC = modelnb_MMC(to_predict_list_MMC)
         return render_template("resultMMC.html",resultsvc_MMC=resultsvc_MMC, resultlr_MMC=resultlr_MMC, resultnb_MMC=resultnb_MMC)
 
