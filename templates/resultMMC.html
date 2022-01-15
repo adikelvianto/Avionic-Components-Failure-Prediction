@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Avionic Components Failure Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/resultstyle.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/media result.css') }}">
+</head>
+
+
+   <body>
+<div class='container'>
+<table style="width:70%" class='mid'>
+<tr>
+    <th>Prediction Method</th>
+    <th>Suspect Fail Parts</th>
+</tr>
+<tr>
+    <td>Gaussian Naive Bayes</td>
+    <td>{{resultnb_MMC}}</td>
+</tr>
+<tr>
+    <td>Support Vector Machine</td>
+    <td>{{resultsvc_MMC}}</td>
+</tr>
+<tr>
+    <td>Logistic Regression</td>
+    <td>{{resultlr_MMC}}</td>
+</tr>
+</table>
+
+<div class = "center">
+
+<form action ="{{url_for('MMCcheck')}}">
+    <input  class="again" type="submit" value="Predict This Component Again" >
+</form>
+
+<form action ="{{url_for('index')}}">
+    <input  class="another" type="submit" value="Choose Another Component" >
+</form>
+</div>
+</div>
+
+</body>
+</html>

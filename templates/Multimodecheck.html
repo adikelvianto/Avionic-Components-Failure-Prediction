@@ -1,0 +1,251 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Avionic Components Failure Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/checkstyle.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/media check.css') }}">
+</head>
+
+
+<body>
+    <div class="title">Multimode Control Panel Prediction Test</div>
+ 
+<div>
+  <form action="/MMCresult" method="POST">
+<table style="width:70%" class="mid">
+<!--row1-->
+  <tr>
+    <th colspan="2" ><strong>Set Test</strong></th>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">C. Power Input Continuity Check</label></td>
+    <td class="btnctr">
+  <label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">E. Power Consumption Test</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">F. Lighting Test</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">G. Software Revision Verification</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">H. Non-Volatile Memory</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">I. ARINC 429 Output Test</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">J. Emergency Power Test</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">K. Keypad</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">L. Test Switch</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">M. Transfer Switch Test</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">N. Mode Select Button and Programming Discrete</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">O. ACT/STBY (Active/Standby Transfer) Button </label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">P. Frequency Locks</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">Q. Test Inhibit
+</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">R. DME TEST Disable</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">S. Master Dim & Test Mode</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">T. Logic Pole 1 Test</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">U. Logic Pole 3 Test </label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">V. GLS Extended Range</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">W. FMC ARINC 429 Input Scanning DME Test (Label 035)</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">X. FMC Tune Enable Test</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">1.A Factory Tests and Settings Continuity Test</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="left"><label for="test1">1.B 5 Vdc Power Bus Adjustment</label></td>
+    <td class="btnctr"><label class="switch"><input type="hidden" name="testresult_MMC" value="1"><input type="checkbox" id="togBtn" onclick="this.previousSibling.value=0-this.previousSibling.value">
+ <div class="slider round">
+ </div>
+</label>
+    </td>
+  </tr>
+</table>
+
+<div class="container">
+  <div class="center">
+    <input  class="predict" type="submit" value="Predict">
+  </div>
+</div>
+</form>
+
+
+<form action ="{{url_for('index')}}">
+<div class="container">
+  <div class="center">
+    <input  class="back" type="submit" value="Back">
+  </div>
+</div>
+</form>
+</div>
+
+
+ 
+</body>
+</html>
