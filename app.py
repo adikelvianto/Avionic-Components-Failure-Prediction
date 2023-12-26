@@ -1,25 +1,3 @@
-#Pre processing and scoring library
-from sklearn.datasets import make_classification
-from sklearn.preprocessing import label_binarize
-from sklearn.model_selection import KFold,train_test_split,cross_val_score,StratifiedKFold,RepeatedKFold,GridSearchCV
-from sklearn.metrics import make_scorer, accuracy_score,precision_score
-from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import accuracy_score, precision_score,recall_score,f1_score,roc_auc_score, roc_curve,auc
-
-#Model Selection Library
-from sklearn.ensemble import RandomForestClassifier,GradientBoostingClassifier
-from sklearn.linear_model import  LogisticRegression
-from sklearn.linear_model import SGDClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC, LinearSVC
-from sklearn.naive_bayes import GaussianNB
-from sklearn.neural_network import MLPClassifier
-from sklearn.multiclass import OneVsRestClassifier
-
-
-import os
 import pandas as pd 
 import numpy as np
 import flask
