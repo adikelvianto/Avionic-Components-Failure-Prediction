@@ -142,7 +142,7 @@ def create_VOR_form(VOR_testing_list):
 
         with col2:
             toggle_value = st.toggle(f'toggle_VOR_{i+1}', label_visibility="hidden", key=f'toggle_VOR_{i+1}')
-            flat_mapped_values_VOR.append(1 if toggle_value else 0)
+            flat_mapped_values_VOR.append(0 if toggle_value else 1)
 
         with col3:
             if toggle_value:
@@ -151,6 +151,8 @@ def create_VOR_form(VOR_testing_list):
                 st.markdown('<p style="color: green; font-size: 16px;"><strong>Pass</strong></p>', unsafe_allow_html=True)
 
     flat_mapped_values_VOR = [value for value in flat_mapped_values_VOR]
+
+    print(flat_mapped_values_VOR)
 
     return flat_mapped_values_VOR
 
@@ -168,7 +170,7 @@ def create_MMC_form(MMC_testing_list):
 
         with col2:
             toggle_value_MMC = st.toggle(f'toggle_MMC_{i+1}', label_visibility="hidden", key=f'toggle_MMC_{i+1}')
-            flat_mapped_values_MMC.append(1 if toggle_value_MMC else 0)
+            flat_mapped_values_MMC.append(0 if toggle_value_MMC else 1)
 
         with col3:
             if toggle_value_MMC:
@@ -207,9 +209,9 @@ if selected_model == "VOR":
         header1, header2 = st.columns([2, 2])
         with header1:
             st.markdown('<div class="centered-header"><strong>Prediction Algorithm</strong></div>', unsafe_allow_html=True)
-            st.markdown('<div class="centered-content">Naive Bayes</div>', unsafe_allow_html=True)
+            st.markdown('<div class="centered-content">Gaussian Naive Bayes</div>', unsafe_allow_html=True)
             st.markdown('<div class="centered-content">Logistic Regression</div>', unsafe_allow_html=True)
-            st.markdown('<div class="centered-content">K-Nearest Negihbour</div>', unsafe_allow_html=True)
+            st.markdown('<div class="centered-content">K-Nearest Neighbors</div>', unsafe_allow_html=True)
 
         with header2:
             st.markdown('<div class="centered-header"><strong>Suspect Fail Part</strong></div>', unsafe_allow_html=True)
@@ -242,9 +244,9 @@ else:
         header1, header2 = st.columns([2, 2])
         with header1:
             st.markdown('<div class="centered-header"><strong>Prediction Algorithm</strong></div>', unsafe_allow_html=True)
-            st.markdown('<div class="centered-content">Naive Bayes</div>', unsafe_allow_html=True)
-            st.markdown('<div class="centered-content">Logistic Regression</div>', unsafe_allow_html=True)
+            st.markdown('<div class="centered-content">Gaussian Naive Bayes</div>', unsafe_allow_html=True)
             st.markdown('<div class="centered-content">Support Vector Machine</div>', unsafe_allow_html=True)
+            st.markdown('<div class="centered-content">Logistic Regression</div>', unsafe_allow_html=True)
 
         with header2:
             st.markdown('<div class="centered-header"><strong>Suspect Fail Part</strong></div>', unsafe_allow_html=True)

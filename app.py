@@ -67,6 +67,7 @@ def VORresult():
         resultnb_VOR = modelnb_VOR(to_predict_list_VOR)
         resultknn_VOR = modelknn_VOR(to_predict_list_VOR)
         resultlr_VOR = modellr_VOR(to_predict_list_VOR)
+        print(to_predict_list_VOR)
         return render_template("resultVOR.html",resultnb_VOR=resultnb_VOR,resultknn_VOR = resultknn_VOR, resultlr_VOR=resultlr_VOR)
 
 #Prediction function for MMC
