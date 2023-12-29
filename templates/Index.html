@@ -1,23 +1,33 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Avionic Components Failure Prediction</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/indexstyle.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/media index.css') }}">
-
 </head>
 <body>
 <form action="/" method="POST">
-<div class="container">
-  <div class="title">Select a component:</div>
-  <select onchange="if (this.value)window.location.href=this.value" name="components" id="components" class="select">
-    <optgroup>
-    <option>Component</option>
-    <option value="{{url_for('VORcheck')}}">VOR</option>
-    <option value="{{url_for('MMCcheck')}}">Multimode Control Panel</option>
-    </optgroup>
-  </select>
-</div>
+  <div class="container">
+    <div class="title">Select a component:</div>
+    <select onchange="if (this.value) window.location.href=this.value" name="components" id="components" class="select">
+      <optgroup>
+        <option>Component</option>
+        <option value="{{url_for('VORcheck')}}">VOR</option>
+        <option value="{{url_for('MMCcheck')}}">Multimode Control Panel</option>
+      </optgroup>
+    </select>
+  </div>
 </form>
+
+<div class="streamlit-button">
+  <a href="https://avionic-components-failure-prediction.streamlit.app/" target="_blank" rel="noopener noreferrer">
+    <span class="text">Go to Streamlit App!</span>
+  </a>
+</div>
+
+
+
+
 </body>
 </html>

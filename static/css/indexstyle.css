@@ -19,3 +19,26 @@
 }
 
 optgroup { font-size: 18px; }
+
+/* Adjusted CSS for the streamlit-button class */
+.streamlit-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.streamlit-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.streamlit-button a:hover {
+  background-color: #333333;
+}
+

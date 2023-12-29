@@ -41,7 +41,7 @@ body{
 
 input.again{
   margin-top: 20px;
-  width: 200px;
+  width: 230px;
   height: 45px;
   border-radius: 6px;
   color: black;
@@ -53,7 +53,7 @@ input.again{
 }
 
 input.another{
-  width: 190px;
+  width: 220px;
   height: 45px;
   border-radius: 6px;
   background-color: white;
