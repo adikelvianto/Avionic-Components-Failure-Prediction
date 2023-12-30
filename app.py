@@ -67,7 +67,6 @@ def VORresult():
         resultnb_VOR = modelnb_VOR(to_predict_list_VOR)
         resultknn_VOR = modelknn_VOR(to_predict_list_VOR)
         resultlr_VOR = modellr_VOR(to_predict_list_VOR)
-        print(to_predict_list_VOR)
         return render_template("resultVOR.html",resultnb_VOR=resultnb_VOR,resultknn_VOR = resultknn_VOR, resultlr_VOR=resultlr_VOR)
 
 #Prediction function for MMC
@@ -94,7 +93,7 @@ def modelnb_MMC(to_predict_list_MMC):
 
 
 # Result for MMC
-@app.route('/MMCresult',methods = ['GET','POST'])
+@app.route('/MMCresult',methods = ['POST'])
 def MMCresult():
     if request.method == 'POST':
         to_predict_list_MMC = (request.form.getlist('testresult_MMC', type=int))

@@ -161,11 +161,11 @@ input.another{
 
 
 input.another:hover {
-  background-color: black;
+  background-color: rgb(168, 21, 21);
   color: white;
  }
 input.again:hover {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.697);
   color: white;
  }
 

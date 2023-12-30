@@ -7,8 +7,9 @@
 </head>
 
 
-   <body>
+<body>
 <div class='container'>
+    <div class="title-important"> Prediction Result</div>
 <table style="width:70%" class='mid'>
 <tr>
     <th>Prediction Method</th>
@@ -30,13 +31,22 @@
 
 <div class = "center">
 
-<form action ="{{url_for('VORcheck')}}">
-    <input  class="again" type="submit" value="Predict This Component Again" >
-</form>
+<table style="width:35%" class="table-button">
+    <tr>
+        <td>
+            <form action ="{{url_for('index')}}">
+                <input  class="another" type="submit" value="Choose Another Component" >
+            </form>
+        </td>
 
-<form action ="{{url_for('index')}}">
-    <input  class="another" type="submit" value="Choose Another Component" >
-</form>
+        <td>
+        <form action ="{{url_for('VORcheck')}}">
+            <input  class="again" type="submit" value="Predict This Component Again" >
+        </form>
+        </td>
+    </tr>
+</table>
+
 </div>
 </div>
 

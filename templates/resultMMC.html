@@ -30,14 +30,22 @@
 
 <div class = "center">
 
-<form action ="{{url_for('MMCcheck')}}">
-    <input  class="again" type="submit" value="Predict This Component Again" >
-</form>
+    <table style="width:35%" class="table-button">
+        <tr>
+            <td>
+                <form action ="{{url_for('index')}}">
+                    <input  class="another" type="submit" value="Choose Another Component" >
+                </form>
+            </td>
+    
+            <td>
+            <form action ="{{url_for('VORcheck')}}">
+                <input  class="again" type="submit" value="Predict This Component Again" >
+            </form>
+            </td>
+        </tr>
+    </table>
 
-<form action ="{{url_for('index')}}">
-    <input  class="another" type="submit" value="Choose Another Component" >
-</form>
-</div>
 </div>
 
 </body>
