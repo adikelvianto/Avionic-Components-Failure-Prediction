@@ -1,19 +1,22 @@
 import pandas as pd 
 import numpy as np
+import os
 import flask
 import pickle
 from flask import Flask, render_template, request
 
+
+current_directory = os.getcwd()
+
 # VOR Data Read
-import pandas as pd 
-df_VOR = pd.read_csv('VOR Train Test.csv')
+df_VOR = pd.read_csv(os.path.join(current_directory,'VOR Train Test.csv'))
 df_VOR = df_VOR.drop('ORDER',axis=1)
 
 Features_VOR = df_VOR.iloc [:,0:-1].values      # Feature Matrix / Independent Variables
 Targets_VOR, Values_VOR = pd.factorize(df_VOR["FAULTY PARTS"])      # Target Matrix / Dependent Variable
 
 # MMC Data Read
-df_MMC = pd.read_csv('Multimode Train Test.csv')
+df_MMC = pd.read_csv(os.path.join(current_directory,'Multimode Train Test.csv'))
 df_MMC = df_MMC.drop('ORDER',axis=1)
 
 Features_MMC = df_MMC.iloc [:,0:-1].values      # Feature Matrix / Independent Variables
@@ -40,21 +43,21 @@ def MMCcheck():
 #Prediction function for VOR
 def modelnb_VOR(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1,19)
-    loaded_modelnb_VOR = pickle.load(open("modelnb_VOR.pkl","rb"))
+    loaded_modelnb_VOR = pickle.load(open(os.path.join(current_directory,"modelnb_VOR.pkl"),"rb"))
     resultnb_VOR_num = loaded_modelnb_VOR.predict(to_predict)
     resultnb_VOR = Values_VOR[resultnb_VOR_num]
     return resultnb_VOR [0]
 
 def modelknn_VOR(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1,19)
-    loaded_modelknn_VOR = pickle.load(open("modelknn_VOR.pkl","rb"))
+    loaded_modelknn_VOR = pickle.load(open(os.path.join(current_directory,"modelknn_VOR.pkl"),"rb"))
     resultknn_VOR_num = loaded_modelknn_VOR.predict(to_predict)
     resultknn_VOR = Values_VOR[resultknn_VOR_num]
     return resultknn_VOR [0]
 
 def modellr_VOR(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1,19)
-    loaded_modellr_VOR = pickle.load(open("modellr_VOR.pkl","rb"))
+    loaded_modellr_VOR = pickle.load(open(os.path.join(current_directory,"modellr_VOR.pkl"),"rb"))
     resultlr_VOR_num = loaded_modellr_VOR.predict(to_predict)
     resultlr_VOR = Values_VOR[resultlr_VOR_num]
     return resultlr_VOR [0]
@@ -72,21 +75,21 @@ def VORresult():
 #Prediction function for MMC
 def modellr_MMC(to_predict_list_MMC):
     to_predict_MMC = np.array(to_predict_list_MMC).reshape(1,23)
-    loaded_modellr_MMC = pickle.load(open("modellr_mmr.pkl","rb"))
+    loaded_modellr_MMC = pickle.load(open(os.path.join(current_directory,"modellr_mmr.pkl"),"rb"))
     resultlr_MMC_num = loaded_modellr_MMC.predict(to_predict_MMC)
     resultlr_MMC = Values_MMC[resultlr_MMC_num]
     return resultlr_MMC [0]
 
 def modelsvc_MMC(to_predict_list_MMC):
     to_predict_MMC = np.array(to_predict_list_MMC).reshape(1,23)
-    loaded_modelsvc_MMC = pickle.load(open("modelsvc_mmr.pkl","rb"))
+    loaded_modelsvc_MMC = pickle.load(open(os.path.join(current_directory,"modelsvc_mmr.pkl"),"rb"))
     resultsvc_MMC_num = loaded_modelsvc_MMC.predict(to_predict_MMC)
     resultsvc_MMC = Values_MMC[resultsvc_MMC_num]
     return resultsvc_MMC [0]
 
 def modelnb_MMC(to_predict_list_MMC):
     to_predict_MMC = np.array(to_predict_list_MMC).reshape(1,23)
-    loaded_modelnb_MMC = pickle.load(open("modelnb_mmr.pkl","rb"))
+    loaded_modelnb_MMC = pickle.load(open(os.path.join(current_directory,"modelnb_mmr.pkl"),"rb"))
     resultnb_MMC_num = loaded_modelnb_MMC.predict(to_predict_MMC)
     resultnb_MMC = Values_MMC[resultnb_MMC_num]
     return resultnb_MMC [0]

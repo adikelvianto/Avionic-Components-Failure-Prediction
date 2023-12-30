@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Components Failure Prediction</title>
+  <title>Avionic Components Failure Prediction</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/indexstyle.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/media index.css') }}">
 </head>
 <body>
 <form action="/" method="POST">
   <div class="container">
-    <div class="title"><strong>Select a component:</strong></div>
+    <div class="title"><strong>Select a component</strong></div>
     <select onchange="if (this.value) window.location.href=this.value" name="components" id="components" class="select">
       <optgroup>
         <option>Component</option>
