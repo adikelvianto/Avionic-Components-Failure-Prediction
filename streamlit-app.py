@@ -152,8 +152,6 @@ def create_VOR_form(VOR_testing_list):
 
     flat_mapped_values_VOR = [value for value in flat_mapped_values_VOR]
 
-    print(flat_mapped_values_VOR)
-
     return flat_mapped_values_VOR
 
 

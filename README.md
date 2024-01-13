@@ -42,7 +42,13 @@ To run the application locally, follow these steps:
 2. Install dependencies:
    ```bash
     pip install -r requirements.txt
-3. Run the Flask application:
+
+3. Run Flask application:
    ```bash
     python app.py
-Open your browser and go to http://localhost:5000 to view the application.
+    ```
+    **or**
+
+4. Run Streamlit application:  
+    ```bash
+    streamlit run streamlit-app.py
