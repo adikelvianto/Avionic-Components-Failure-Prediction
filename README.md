@@ -1,13 +1,48 @@
-# Avionic Components Failure Prediction Prortype Website
+# Avionic Components Failure Prediction Prototype Website
 
-This is my **internship** project at **PT. GMF Aeroasia Tbk** for about **4 months**. In this project, I created a **prototype website** to provide **failure prediction** of VHF Omnidirectional Range (VOR) and Multimode Control Panel components, by using **scikit-learn** library, **HTML, CSS, and Flask**.
+## Overview
 
-## Project Tasks
+This project is an internship assignment conducted at PT. GMF Aeroasia Tbk over a span of 4 months. The objective was to develop a prototype website for predicting the failure of avionic components, specifically VHF Omnidirectional Range (VOR) and Multimode Control Panel components. The application utilizes machine learning methods implemented with scikit-learn library, and the web interface is built using HTML, CSS, and Flask.
 
-- Collected information regarding maintenance from "Internal Component Refurbishment" documents both for VOR component (19 sub-tests) and Multimode Control Panel component (23 sub-tests) to **create 2 datasets**.
-- **Split dataset** into train, validation, and test datasets and utilized "**Nested Cross Validation**" method to get **best hyperparameter** for each machine learning algorithm used (Decision Tree, Random Forest, Gradient Boosting, Gaussian Naive Bayes, KNN, MLP).
-- **Picked 3** best performing algorithms for both components that give **best accuracy** on the test set **to be deployed** on the website.
-- Created the structure of the website using HTML with a total of **5 pages**, designed using CSS, and a bit of JavaScript to allow value stored in each toggle button changed when the user gives a click.
-- **Deployed** the website by using **Flask API** and the help of **Heroku** platform as a **server**.
+## Project Highlights
 
-Unfortunately, due to Heroku's new policy that does not support free hosting, the URL of the deployed website is not provided
+- **Datasets Creation:**
+  - Collected maintenance information from "Internal Component Refurbishment" documents for both VOR (19 sub-tests) and Multimode Control Panel (23 sub-tests) components.
+  - Created two datasets based on the collected information:
+    - [VOR Dataset](https://github.com/adikelvianto/Avionic-Components-Failure-Prediction/blob/main/VOR%20Train%20Test.csv)
+    - [Multimode Control Panel Dataset](https://github.com/adikelvianto/Avionic-Components-Failure-Prediction/blob/main/Multimode%20Train%20Test.csv).
+  - Splitted the dataset into training, validation, and test sets.
+
+- **Machine Learning Model Selection:**
+  - Utilized "Nested Cross Validation" to determine the best hyperparameters for each machine learning algorithm.
+  - Considered algorithms such as Decision Tree, Random Forest, Gradient Boosting, Gaussian Naive Bayes, KNN, and MLP.
+
+- **Algorithm Deployment:**
+  - Selected the top 3 performing algorithms for each component based on accuracy on the test set.
+  - Implemented the selected algorithms in the Flask API for deployment.
+
+- **Website Development:**
+  - Structured the website with HTML, consisting of 5 pages.
+  - Applied CSS for design, including a bit of JavaScript for interactive features like toggle buttons.
+
+- **Deployment Platforms:**
+  - Originally deployed on Heroku. However, due to policy changes that discontinued free hosting support, the project was subsequently redeployed in December 2023 on [PythonAnywhere](https://www.pythonanywhere.com/) for hosting. Additionally, the Streamlit app was built and hosted on [Streamlit Cloud](https://streamlit.io/cloud).
+  - The application, including the Streamlit app, can be accessed at:
+    - [Avionic Components Failure Prediction - PythonAnywhere](https://adikelvianto00.pythonanywhere.com/)
+    - [Avionic Components Failure Prediction - Streamlit](https://avionic-components-failure-prediction.streamlit.app/).
+
+## Getting Started
+
+To run the application locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/adikelvianto/Avionic-Components-Failure-Prediction.git
+   cd Avionic-Components-Failure-Prediction
+2. Install dependencies:
+   ```bash
+    pip install -r requirements.txt
+3. Run the Flask application:
+   ```bash
+    python app.py
+Open your browser and go to http://localhost:5000 to view the application.
